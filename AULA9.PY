@@ -3,6 +3,12 @@
 # negativo ou zero.
 número = int(input("DIGITE UM NÚMERO: "))
 print(número)
+if número > 0 :
+    print("O NÚMERO É POSITIVO")
+if número < 0 :
+    print("O NÚMERO É NEGATIVO")
+if número == 0 :
+    print("O NÚMERO É ZERO")
 #2*
 #Peça para o usuário digitar a idade, verifique se uma pessoa pode votar com 
 #base na idade.
@@ -12,6 +18,7 @@ if idade <= 15 :
 else :
     print("PODE VOTAR")
 #3
+
 #Declara uma variável com um número qualquer, determine se um número é par ou ímpar.
 num = 7
 if num % 2 == 0 :
@@ -32,12 +39,12 @@ elif num_1 != num_2 != num_3 :
 else :
     print("O TRIÂNGULO É ISÓSCELES")
  
-# Um triângulo é chamado de equilátero se todos os lados possuem a mesma medida. 
-# Um triângulo é chamado de isósceles se dois lados possuem a mesma medida. 
-# Um triângulo é chamado de escaleno se todos os lados possuem medidas diferentes.
+# # Um triângulo é chamado de equilátero se todos os lados possuem a mesma medida. 
+# # Um triângulo é chamado de isósceles se dois lados possuem a mesma medida. 
+# # Um triângulo é chamado de escaleno se todos os lados possuem medidas diferentes.
 
-#5*
-#Determine se um número é múltiplo de 5 e 7.
+# # 5*
+# Determine se um número é múltiplo de 5 e 7.
 print("DESCUBRA SE UM NÚMERO É MÚLTIPLO DE 5 E 7")
 dig_num = int(input("DIGITE UM NÚMERO: "))
 if dig_num % 5 == 0 and dig_num % 7 == 0 :
