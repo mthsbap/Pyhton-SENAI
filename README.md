@@ -1,1 +1,1 @@
-# Pyhton-SENAI
+# Python-SENAI
