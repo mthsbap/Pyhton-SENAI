@@ -1,4 +1,3 @@
-
 # 1* 
 # Peça para o usuário digitar um número, verifique se um número é positivo, 
 # negativo ou zero.
@@ -63,3 +62,47 @@ if div % 3 == 0 or div % 5 == 0:
     print("O NÚMERO É DIVISIVEL POR 3 OU 5")
 else :
     print("O NÚMERO NÃO É DIVISIVEL POR 3 OU 5")
+#-----------------------------------------------------------------------------------------
+quartos = {"Simples": 100, "Duplo" : 150, "Luxo" : 250}
+
+print(" BEM-VINDO AO SISTEMA DE CADASTRO DE CLIENTES PARA RESERVA NO HOTEL")
+usuario_1 = input("DIGITE O NOME DO 1º CLIENTE: ")
+idade_1 = int(input("DIGITE A IDADE DO 1º CLIENTE: "))
+usuario_2 = input("DIGITE O NOME DO 2º CLIENTE: ")
+idade_2 = int(input("DIGITE A IDADE DO 2º CLIENTE: "))
+usuario_3 = input("DIGITE O NOME DO 3º CLIENTE: ")
+idade_3 = int(input("DIGITE A IDADE DO 3º CLIENTE: "))
+
+print("RESERVA DE QUARTOS")
+escolha_1 = input(f'''
+{usuario_1} ESCOLHA O TIPO DE QUARTO:
+Simples - R$ 100,00 por dia.
+Duplo - R$ 150,00 por dia.
+Luxo - R$ 250,00 por dia.
+''')
+escolha_2 = input(f'''
+{usuario_2} ESCOLHA O TIPO DE QUARTO:
+Simples - R$ 100,00 por dia.
+Duplo - R$ 150,00 por dia.
+Luxo - R$ 250,00 por dia.
+''')
+escolha_3 = input(f'''
+{usuario_3} ESCOLHA O TIPO DE QUARTO:
+Simples - R$ 100,00 por dia.
+Duplo - R$ 150,00 por dia.
+Luxo - R$ 250,00 por dia.
+''')
+
+print("CÁLCULO DA ESTADIA DOS CLIENTES")
+dias_1 = int(input(f"{usuario_1} DIGITE A SUA QUANTIDADE DE DIAS: "))
+dias_2 = int(input(f"{usuario_2} DIGITE A SUA QUANTIDADE DE DIAS: "))
+dias_3 = int(input(f"{usuario_3} DIGITE A SUA QUANTIDADE DE DIAS: "))
+calculo_1 = quartos[escolha_1] * dias_1
+calculo_2 = quartos[escolha_2] * dias_2
+calculo_3 = quartos[escolha_3] * dias_3
+
+print(f'''PAGAMENTO:
+CLIENTE: {usuario_1}, IDADE: {idade_1}, QUARTO: {escolha_1}, VALOR POR DIA: R${float(quartos[escolha_1]):.2f}, DIAS: {dias_1}, PREÇO DA ESTADIA: R${float(calculo_1):.2f}
+CLIENTE: {usuario_2}, IDADE: {idade_2}, QUARTO: {escolha_2}, VALOR POR DIA: R${float(quartos[escolha_2]):.2f}, DIAS: {dias_2}, PREÇO DA ESTADIA: R${float(calculo_2):.2f}
+CLIENTE: {usuario_3}, IDADE: {idade_3}, QUARTO: {escolha_3}, VALOR POR DIA: R${float(quartos[escolha_3]):.2f}, DIAS: {dias_3}, PREÇO DA ESTADIA: R${float(calculo_3):.2f}
+''')
